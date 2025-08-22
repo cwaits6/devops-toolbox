@@ -35,8 +35,8 @@ $DryRun = $true; .\git-remote-migrate.ps1
 
 ```
 ✔ /home/user/repos/project-a
-    git@gitlabold.com:team/project-a.git
- -> git@gitlabnew.com:team/project-a.git
+    git@oldgithost.com:team/project-a.git
+ -> git@newgithost.com:team/project-a.git
 ```
 
 ## Notes
