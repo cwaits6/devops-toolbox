@@ -9,27 +9,37 @@ Replaces only the hostname — protocol, user, path stay the same.
 ## Setup
 
 Edit the variables at the top of the script:
+```
 
 OLD_HOST="myoldgithost.com"
 NEW_HOST="mynewgithost.com"
 ROOT_DIR="$HOME/repos"
 DRY_RUN=false
+```
 
 ## Usage
 
 ### macOS/Linux
+```
+
 chmod +x git-remote-migrate.sh
 ./git-remote-migrate.sh
+```
 
 ### Windows
+```
+
 .\git-remote-migrate.ps1
+```
 
 ## Dry Run
 
 Preview changes only:
+```
 
 DRY_RUN=true ./git-remote-migrate.sh
 $DryRun = $true; .\git-remote-migrate.ps1
+```
 
 ## Example Output
 
