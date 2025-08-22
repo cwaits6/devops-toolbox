@@ -2,8 +2,8 @@
 set -euo pipefail
 
 #========= EDIT ME =========#
-OLD_HOST="gitlabold.com"
-NEW_HOST="gitlabnew.com"
+OLD_HOST="oldgithost.com"
+NEW_HOST="newgithost.com"
 ROOT_DIR="$HOME/repos" # where to start scanning for repos
 DRY_RUN=true           # set to true to preview changes
 #======= END EDIT ME =======#
@@ -54,6 +54,7 @@ while IFS= read -r -d '' GITDIR; do
     echo "✔ $REPO"
     echo "    $URL"
     echo " -> $NEW_URL"
+    echo ""
     if [[ "$DRY_RUN" != "true" ]]; then
       git remote set-url origin "$NEW_URL"
     fi
