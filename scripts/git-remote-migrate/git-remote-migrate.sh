@@ -16,6 +16,8 @@ while IFS= read -r -d '' GITDIR; do
   [[ -n "$URL" ]] || { cd - >/dev/null || continue; }
   [[ "$URL" == *"$OLD_HOST"* ]] || { cd - >/dev/null || continue; }
 
+  NEW_URL="" # reset per-repo to avoid leaking a prior value
+
   case "$URL" in
   # scp-like: git@host:path
   *@*:*)
@@ -43,10 +45,6 @@ while IFS= read -r -d '' GITDIR; do
     if [[ "$host" == "$OLD_HOST" ]]; then
       NEW_URL="${proto}${user}${NEW_HOST}${path}"
     fi
-    ;;
-  # fallback
-  *)
-    NEW_URL="${URL/$OLD_HOST/$NEW_HOST}"
     ;;
   esac
 
