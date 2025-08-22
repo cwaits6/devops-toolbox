@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/devops-toolbox.png" alt="DevOps Toolbox" width="400"/>
+  <img src="assets/devops-toolbox.png" alt="DevOps Toolbox" width="200"/>
 </p>
 
 <h1 align="center">DevOps Toolbox</h1>
@@ -11,13 +11,6 @@
 </p>
 
 <p align="center">
-  <!-- Shields.io badges (examples, swap as needed) -->
-  <a href="https://github.com/cwaits6/devops-toolbox/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/cwaits6/devops-toolbox/ci.yml?branch=main&label=CI&logo=github" alt="CI Status"/>
-  </a>
-  <a href="https://github.com/cwaits6/devops-toolbox/releases">
-    <img src="https://img.shields.io/github/v/release/cwaits6/devops-toolbox?logo=github" alt="Latest Release"/>
-  </a>
   <a href="https://github.com/cwaits6/devops-toolbox/issues">
     <img src="https://img.shields.io/github/issues/cwaits6/devops-toolbox?logo=github" alt="Issues"/>
   </a>
